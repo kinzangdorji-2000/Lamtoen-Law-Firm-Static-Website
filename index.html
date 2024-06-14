@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="x-icon" href="images/android-chrome-512x512.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamtoen Law Firm</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick="hideSidebar()"><a href="#"><svg class="close-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a href="#">About Us</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Firm</a></li>
+          <li><a href="#">Vision & Mission</a></li>
+          <li><a href="#">Values</a></li>
+          <li><a href="#">Meet the Founder & Team</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Practice Areas</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Consultation</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Representation</a></li>
+          <li><a href="#">Mediation</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Legal Fees Guide</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Consultation Fees</a></li>
+          <li><a href="#">Documentation Fees</a></li>
+          <li><a href="#">Representation Fees</a></li>
+          <li><a href="#">Mediation Fees</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">ལམ་སྟོན་ཁྲིམས་དོན་ཡིག་ཚང།</a></li>
+      <li class="hideOnMobile"><a href="#">Home</a></li>
+      <li class="dropdown hideOnMobile">
+        <a href="#">About Us</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Firm</a></li>
+          <li><a href="#">Vision & Mission</a></li>
+          <li><a href="#">Values</a></li>
+          <li><a href="#">Meet the Team</a></li>
+        </ul>
+      </li>
+      <li class="dropdown hideOnMobile">
+        <a href="#">Practice Areas</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Consultation</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Representation</a></li>
+          <li><a href="#">Mediation</a></li>
+        </ul>
+      </li>
+      <li class="dropdown hideOnMobile">
+        <a href="#">Legal Fees Guide</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Consultation Fees</a></li>
+          <li><a href="#">Documentation Fees</a></li>
+          <li><a href="#">Representation Fees</a></li>
+          <li><a href="#">Mediation Fees</a></li>
+        </ul>
+      </li>
+      <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+      <li><a href="#"><svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed" onclick="showSidebar()"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <video controls>
+      <source src="video/demo.mp4" type="video/mp4">
+    </video>
+    <div class="welcome-text">
+      <div class="title">
+        <h1>Welcome to LamToen Law:</h1>
+        <h2>Your Legal Guide to Justice</h2>
+      </div>
+      <p>No matter where you are in Bhutan or around the globe, LamToen Law is here to address your legal concerns with expertise, compassion, and satisfaction guaranteed.</p>
+      <p>At LamToen, we take pride in our profound legal knowledge, diverse experience, and unwavering commitment to our clients. Whether you are facing a complex legal issue or seeking proactive legal advice, we are here to help. From consultation to representation, documentation, and mediation, we offer a wide range of services tailored to meet your unique needs.</p>
+      <p>Our team of dedicated professionals stands ready to guide you through any legal issue you may face, ensuring that you receive the assistance you need, when you need it.</p>
+      <p>Your satisfaction is our priority. You are the heartbeat of our firm, and your trust fuels our dedication to excellence.</p>
+      <p>While our physical presence is in Thimphu, Bhutan, our virtual doors are open to individuals from all walks of life, both Bhutanese and non-Bhutanese, seeking clarity and resolution in their legal matters.</p>
+      <p>Reach out to LamToen Law today and let us be your legal guide on the path to justice.</p>
+    </div>
+  </div>
+  <footer>
+    <div class="rside">
+        <form id="contactForm" onsubmit="sendToWhatsApp(event)">
+            <div class="git">Contact Us</div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Enter your message"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+        <script>
+          function sendToWhatsApp(event) {
+              event.preventDefault(); // Prevent form from submitting the default way
+  
+              var name = document.getElementById('name').value;
+              var email = document.getElementById('email').value;
+              var phone = document.getElementById('phone').value;
+              var message = document.getElementById('message').value;
+  
+              // Construct the message with newline characters
+              var whatsappMessage = `Name: ${name}\nEmail: ${email}\nPhone Number: ${phone}\nMessage: ${message}`;
+              
+              // Encode the message
+              var encodedMessage = encodeURIComponent(whatsappMessage);
+              
+              // Replace with your WhatsApp number
+              var whatsappURL = `https://wa.me/17904211?text=${encodedMessage}`;
+  
+              // Open WhatsApp with the pre-filled message
+              window.open(whatsappURL, '_blank');
+          }
+      </script>
+    </div>
+    <div class="copy-right">&copy; 2024 Lamtoen Law | All Rights Reserved</div>
+</footer>
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'flex'; /* Show sidebar */
+    }
+    
+    function hideSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'none'; /* Hide sidebar */
+    }
+  </script>
+</body>
+</html>
