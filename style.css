@@ -49,10 +49,8 @@ nav li:first-child {
     height: 100vh;
     width: 250px;
     z-index: 999;
-    /* background-color: rgba(255, 255, 255, 0.2); */
     background-color: #EEBB4E;
     backdrop-filter: blur(10px);
-    /* box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -108,7 +106,6 @@ nav li:first-child {
 .dropdown-content {
     display: none;
     position: absolute;
-    /* background-color: #f9f9f9; */
     background-color: #EEBB4E;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -123,7 +120,7 @@ nav li:first-child {
 }
 
 .dropdown-content a:hover {
-    background-color: #f0f0f0;
+    background-color: rgb(229, 152, 38);
     height: 30px;
 }
 
@@ -204,14 +201,64 @@ footer {
     color: #fff;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden; /* Clear floats */
 }
 
-.rside {
-    float: right; /* Float to the right side */
-    width: calc(100% - 280px); /* Adjust width based on your design needs */
-    max-width: 600px; /* Keep maximum width if necessary */
-    padding: 20px;
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto; /* Center align the footer */
+}
+
+.left-content, .right-content {
+    width: 45%; /* Adjust width based on your design */
+    padding: 0 20px; /* Add padding to space content from edges */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Add space between sections */
+}
+
+.left-content {
+    text-align: left; /* Align left content to the left */
+}
+
+.company-info, .social-media, .external-links {
+    margin-bottom: 20px; /* Ensure consistent spacing between sections */
+}
+
+.company-info p, .social-media a, .external-links ul {
+    margin-top: 10px; /* Ensure consistent spacing within sections */
+}
+
+.company-info p {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.company-info p strong {
+    min-width: 80px; /* Adjust based on your design */
+}
+
+.social-media a {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer; /* Indicate links can be clicked */
+}
+
+.social-media a:hover {
+    color: rgb(83, 75, 75); /* Change color on hover */
+}
+
+.social-media a i {
+    margin-right: 10px;
+}
+
+.right-content {
+    text-align: left; /* Align form content to the left */
 }
 
 .git {
@@ -248,7 +295,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    margin: 20px auto 0;
+    margin: 20px auto 0; /* Center the button horizontally */
     display: block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -257,21 +304,49 @@ button:hover {
     background-color: #45a049;
 }
 
+.external-links {
+    margin-top: 20px;
+}
+
+.external-links h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.external-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.external-links ul li {
+    margin-bottom: 10px;
+}
+
+.external-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer; /* Indicate links can be clicked */
+}
+
+.external-links ul li a:hover {
+    color: rgb(83, 75, 75); /* Change color on hover */
+}
+
+/* .external-links ul li a:hover {
+    text-decoration: underline;
+} */
+
 .copy-right {
     margin-top: 20px;
     font-size: 16px;
-    clear: both; /* Ensure it stays below floated elements */
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media (max-width: 768px) {
-    .rside {
-        float: none; /* Remove float on smaller screens */
+    .left-content, .right-content {
         width: 100%; /* Full width on smaller screens */
-        max-width: none; /* Remove max-width on smaller screens if needed */
         padding: 10px;
-    }
-    input, textarea {
-        font-size: 12px;
     }
 }
