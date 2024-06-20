@@ -8,8 +8,70 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+}
+
+.logo img {
+    width: auto;
+    max-height: 80px; /* Set a maximum height for the logo */
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em; /* Adjust this value to match the logo size */
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+    margin-left: 10px; /* Increased margin between icon and text */
+}
+
+.contact-info a:hover {
+    color: #EEBB4E; /* Change color on hover */
+}
+.contact-info i {
+    color: #EEBB4E;
+    font-size: 1.2em; /* Adjust this value to match the logo size */
+    margin-left: 5px; /* Adjust margin between icons */
+}
+
+.contact-info i:first-child {
+    margin-left: 20px; /* Adjusted margin specifically for the email icon */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .logo img {
+        max-height: 40px; /* Decrease maximum height for smaller screens */
+    }
+    
+    .contact-info p {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+    
+    .contact-info i {
+        font-size: 1em; /* Adjust icon size for smaller screens */
+        margin-left: 3px; /* Adjust margin between icons on smaller screens */
+    }
+}
+
 nav {
-    background-color: #EEBB4E;
+    background-color: #343842;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -31,11 +93,11 @@ nav a {
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: black;
+    color: white;
 }
 
 nav a:hover {
-    background-color: #f0f0f0;
+    background-color: #EEBB4E;
 }
 
 nav li:first-child {
@@ -49,7 +111,7 @@ nav li:first-child {
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: #EEBB4E;
+    background-color: #343842;
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
@@ -68,13 +130,13 @@ nav li:first-child {
 }
 
 .menu-icon {
-    fill: black;
+    fill: white;
     display: none;
     /* Hide by default */
 }
 
 .close-icon {
-    fill: black;
+    fill: white;
 }
 
 /* Display adjustments for smaller screens */
@@ -106,21 +168,21 @@ nav li:first-child {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #EEBB4E;
+    background-color: #343842;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: rgb(229, 152, 38);
+    background-color: #EEBB4E;
     height: 30px;
 }
 
@@ -193,10 +255,9 @@ video {
     /* Justify the paragraphs for a cleaner look */
 }
 
-
 /* CSS for Footer Section */
 footer {
-    background-color: #EEBB4E;
+    background-color: #343842;
     padding: 20px;
     color: #fff;
     text-align: center;
@@ -250,7 +311,7 @@ footer {
 }
 
 .social-media a:hover {
-    color: rgb(83, 75, 75); /* Change color on hover */
+    color: #EEBB4E;
 }
 
 .social-media a i {
@@ -330,17 +391,12 @@ button:hover {
 }
 
 .external-links ul li a:hover {
-    color: rgb(83, 75, 75); /* Change color on hover */
+    color: #EEBB4E;
 }
-
-/* .external-links ul li a:hover {
-    text-decoration: underline;
-} */
 
 .copy-right {
     margin-top: 20px;
     font-size: 16px;
-    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
